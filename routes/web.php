@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('coba');
 });
+
+Route::get('api/check_csrf/{kode}', 'Auth@check_csrf');
+
+Route::post('api/login_user', 'Auth@login');
+Route::post('api/register_user', 'Auth@register');
+Route::post('api/login_member', 'Member@login');
+Route::post('api/register_member', 'Member@register');
