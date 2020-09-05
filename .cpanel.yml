@@ -1,0 +1,8 @@
+ 
+deployment:
+ 
+ tasks:
+ 
+ - export DEPLOYPATH=/home/u1103978/public_html/backend.jujitsu-upnvjatim.xyz
+ 
+ - /usr/bin/rsync -Paz * $DEPLOYPATH --delete
